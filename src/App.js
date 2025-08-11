@@ -1,23 +1,27 @@
 import logo from './logo.svg';
-import './App.css';
+import './index.css';
+
+import Student from './Component/Basic/Student';
+
+import Card from './Component/ProductCard/Card';
+import Profile from './Component/Userprofile/Profile';
+import ProfileCard from './Component/Userprofile/ProfileCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <header className="App-header">
+       
+       <Student name = "mamta" age= {22} isPreety = {true}/>
+        <Student name = "sam"  age= {22} isPretty = {false}/>
+        <Student name = "rim"  age= {22} isPretty = {false}/>
+      </header> */}
+      <ProfileCard/>
+     <Card />
+     
+    
+
+      
     </div>
   );
 }
